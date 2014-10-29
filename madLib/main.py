@@ -14,7 +14,7 @@ __author__ = 'Konner'
 # Must have and use parameters
 # One loop
 '''
-for i in range(0,1):
+for i in range(0,1):#loop that lets people know what we are doing
     print "Hello!"
     print "And Welcome to the Bobby Madlib"
     print "Lets get started"
@@ -26,27 +26,28 @@ ice_cream = dict()
 ice_cream = {"1":'Chocolate','2':'Vanilla'}
 number = raw_input("Enter number 1 or 2")
 
-
+# -----FUNCTION
 def year_income(hour,year):
-    income = hour * year
-    return income
+    income = hour * year #this is going to take the input from hour and year and multiply them together to see how much he makes a year
+    return income #Returning the income
 hour = int(raw_input("how much does he make an hour"))
 year = int(raw_input("How many days in a year?"))
 result = year_income(hour,year)
+# ------END FUNCTION
 
 his_friend = raw_input("Enter your best friends Name")
-friends = ["Konner","Bobby","Jerry"]
-friends.append(his_friend)
+friends = ["Konner","Bobby","Jerry"]#array of bobbys best friends
+friends.append(his_friend)#adding in "his_friend" input to the friends array
 
 weight = int(raw_input("Enter random weight"))
-avg_weight = 140
+avg_weight = 140 #average male weight of America
 r_number=int(raw_input("Random number"))
 thing = True
 
-if r_number >=10:
+if r_number >=10: #if the r_number is >=10 than the "thing" = true
     thing = True
 
-else:
+else: #if >10 = false
     thing= False
 
 if avg_weight <= weight or thing:
