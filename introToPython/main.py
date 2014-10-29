@@ -28,15 +28,15 @@ age +=1
 budget = 50
 shoes = 80
 win_lottery = False
-'''
+
 if shoes <= budget or win_lottery:
     #if nothing put pass
     print "Yes you can buy the shoes"
     #this is inside the conditional
-#this is after the conditional the indent is what makes it work
+    #this is after the conditional the indent is what makes it work
 else:
     print "No SHOES FOR YOU"
-'''
+
 #logical operators = and,or,not (equiv $$,||,!)
 grade_per = 90
 #what would be the letter grade

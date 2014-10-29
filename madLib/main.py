@@ -6,7 +6,7 @@ __author__ = 'Konner'
 '''
 # At least 2 strings
 # At least 2 numbers
-One list/array
+# One list/array
 # One dictionary
 One conditional statement with at least one logical operator
 # One function
@@ -36,9 +36,28 @@ his_friend = raw_input("Enter your best friends Name")
 friends = ["Konner","Bobby","Jerry"]
 friends.append(his_friend)
 
+weight = int(raw_input("Enter random weight"))
+avg_weight = 140
+r_number=int(raw_input("Random number"))
+thing = True
+
+if r_number >=10:
+    thing = True
+
+else:
+    thing= False
+
+if avg_weight <= weight or thing:
+    print "Bobby was very Fat!"
+else:
+    "Bobby is real skinny"
 
 
-print first_thing + age+ "years old"+ "his favorite ice cream was "+ice_cream[number]+ "he makes " + str(result) +" dollars a year" + "his best friends are"
+
+
+
+
+# print first_thing + age+ "years old"+ "his favorite ice cream was "+ice_cream[number]+ "he makes " + str(result) +" dollars a year" + "his best friends are"
 for f in friends:
     print f
 
