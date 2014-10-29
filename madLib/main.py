@@ -31,7 +31,16 @@ def year_income(hour,year):
 hour = int(raw_input("how much does he make an hour"))
 year = int(raw_input("How many days in a year?"))
 result = year_income(hour,year)
-print first_thing + age+ "years old"+ "his favorite ice cream was "+ice_cream[number]+ "he makes " + str(result) +" a year"
+
+his_friend = raw_input("Enter your best friends Name")
+friends = ["Konner","Bobby","Jerry"]
+friends.append(his_friend)
+
+
+
+print first_thing + age+ "years old"+ "his favorite ice cream was "+ice_cream[number]+ "he makes " + str(result) +" dollars a year" + "his best friends are"
+for f in friends:
+    print f
 
 
 
