@@ -8,22 +8,24 @@ __author__ = 'Konner'
 # At least 2 numbers
 # One list/array
 # One dictionary
-One conditional statement with at least one logical operator
+# One conditional statement with at least one logical operator
 # One function
 # Must return a value
 # Must have and use parameters
 # One loop
 '''
-for i in range(0,3):
-    print "Loading.."
-first_thing = "Bobby was "
-# print first_thing
+for i in range(0,1):
+    print "Hello!"
+    print "And Welcome to the Bobby Madlib"
+    print "Lets get started"
+first_thing = "He was "
+
 age = raw_input("Enter age")
-# print first_thing+age+" Years old"
+
 ice_cream = dict()
 ice_cream = {"1":'Chocolate','2':'Vanilla'}
 number = raw_input("Enter number 1 or 2")
-# print "his favorite ice cream was " +  ice_cream[number]
+
 
 def year_income(hour,year):
     income = hour * year
@@ -50,14 +52,9 @@ else:
 if avg_weight <= weight or thing:
     print "Bobby was very Fat!"
 else:
-    "Bobby is real skinny"
+   print "Bobby is real skinny"
 
-
-
-
-
-
-# print first_thing + age+ "years old"+ "his favorite ice cream was "+ice_cream[number]+ "he makes " + str(result) +" dollars a year" + "his best friends are"
+print first_thing + age+ " years old"+ " his favorite ice cream was "+ice_cream[number]+ " he makes " + str(result) +" dollars a year" + " his best friends are"
 for f in friends:
     print f
 
