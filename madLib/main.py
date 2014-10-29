@@ -3,28 +3,25 @@ __author__ = 'Konner'
 #October 28 2014
 #madlib
 
-'''
-# At least 2 strings
-# At least 2 numbers
-# One list/array
-# One dictionary
-# One conditional statement with at least one logical operator
-# One function
-# Must return a value
-# Must have and use parameters
-# One loop
-'''
+
+#--FirstLoop
 for i in range(0,1):#loop that lets people know what we are doing
     print "Hello!"
     print "And Welcome to the Bobby Madlib"
     print "Lets get started"
+#--End first loop
+
 first_thing = "He was "
 
-age = raw_input("Enter age")
+age = raw_input("Enter age")#taking it in as a string
 
+
+#------Dictionary
 ice_cream = dict()
 ice_cream = {"1":'Chocolate','2':'Vanilla'}
 number = raw_input("Enter number 1 or 2")
+#---End Dict
+
 
 # -----FUNCTION
 def year_income(hour,year):
@@ -35,9 +32,11 @@ year = int(raw_input("How many days in a year?"))
 result = year_income(hour,year)
 # ------END FUNCTION
 
-his_friend = raw_input("Enter your best friends Name")
+#----Array
+his_friend = raw_input("Enter your best friends Name")#String
 friends = ["Konner","Bobby","Jerry"]#array of bobbys best friends
 friends.append(his_friend)#adding in "his_friend" input to the friends array
+#---End Array
 
 weight = int(raw_input("Enter random weight"))
 avg_weight = 140 #average male weight of America
