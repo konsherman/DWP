@@ -28,9 +28,9 @@ class Page(object):
 
 
     def update(self):
-
-        self.all = self.head  + self.form + self.close
-        #**locals() function that represents all accessible variables
+        #ads up all the calsses and gets them ready to print out
+        self.all = self.head + self.form + self.close
+        #**locals() function that pulls in all local vars
         self.all = self.all.format(**locals())
 
 
