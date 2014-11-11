@@ -8,12 +8,12 @@ class MainHandler(webapp2.RequestHandler):
         p = Page()
 
         if self.request.GET:
-            self.response.write(p.head + p.close)
+            self.response.write(p.head)
             self.response.write(self.request.GET['fName']+"</br>")
             self.response.write(self.request.GET['lName']+"</br>")
             self.response.write(self.request.GET['age']+"</br>")
             self.response.write(self.request.GET['gender']+"</br>")
-            self.response.write(self.request.GET['com']+"</br>")
+            self.response.write(self.request.GET['com']+"</br>"+p.close)
 
         else:
             self.response.write(p.print_out())
