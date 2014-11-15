@@ -8,15 +8,15 @@ from count import Count
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         c = Count()
+        self.response.write(c.print_out())
 
 
 
 
-        if self.request.GET:
-            c.print_out()
-            self.response.write('<a href="">Count</a>')
 
-        c.print_out()
+
+
+
 
 
 app = webapp2.WSGIApplication([
