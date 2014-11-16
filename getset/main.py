@@ -8,13 +8,12 @@ from count import Count
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         c = Count()
-        self.response.write(c.print_out())
 
+        if self.request.GET:
 
+            self.response.write(c.print_out)
 
-
-
-
+        self.response.write('<a href="">Count</a>')
 
 
 
