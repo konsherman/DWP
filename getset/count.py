@@ -20,8 +20,8 @@ class Count(object):
 
     def print_out(self):
         stuff = self.__content
-        stuff = stuff.format(**locals())
-        return stuff
+        stuff = stuff.format(**locals()) #making it so the vars will work in the content {like.this}
+        return stuff #returning the stuff
 
 
 
