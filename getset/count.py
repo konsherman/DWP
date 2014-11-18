@@ -1,21 +1,26 @@
 class Count(object):
     def __init__(self):
-        self.__count = 0
-        self.__content = "<p href='?n={self.count}'>{self.__count}</p>"
+        self.__count = 1  
+        self.__content = "<a href='?n={self.count}'>{self.count}</a>"
+
+
+
+    def counter(self):
+        self.__count += 1
+
 
     @property
     def count(self):
-        it = self.__count = self.__count + 1
-        return it
+        return self.__count
 
     @count.setter
     def count(self, new_count):
-        self.__count = int(new_count)
-
+        self.__count = new_count
+        self.counter()
 
     def print_out(self):
-        stuff = self.__content + str(self.__count)
-        stuff = all.format(**locals())
+        stuff = self.__content
+        stuff = stuff.format(**locals())
         return stuff
 
 

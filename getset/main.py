@@ -10,12 +10,10 @@ class MainHandler(webapp2.RequestHandler):
         c = Count()
 
         if self.request.GET:
-
-            self.response.write(c.print_out)
-
-        self.response.write('<a href="">Count</a>')
+            c.count = int(self.request.GET['n'])
 
 
+        self.response.write(c.print_out())
 
 
 app = webapp2.WSGIApplication([
