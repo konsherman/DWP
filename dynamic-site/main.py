@@ -16,18 +16,19 @@ class MainHandler(webapp2.RequestHandler):
         p = Page()
         if self.request.GET:
             if self.request.GET['cat'] == 'black':
-                self.response.write(p.print_out())
-                self.response.write(b.show())
+                self.response.write(b.show()+p.print_out())
+                # self.response.write(b.show())
+
 
             if self.request.GET['cat'] == 'orange':
-                self.response.write(p.print_out())
-                self.response.write(o.show())
+                self.response.write(o.show()+p.print_out())
+
             if self.request.GET['cat'] == 'bengal':
-                self.response.write(p.print_out())
-                self.response.write(ben.show())
+                self.response.write(ben.show()+p.print_out())
+
             if self.request.GET['cat'] == 'burmese':
-                self.response.write(p.print_out())
-                self.response.write(bur.show())
+                self.response.write(bur.show()+p.print_out())
+
         else:
             self.response.write(p.print_out())
 

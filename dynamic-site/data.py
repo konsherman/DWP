@@ -19,7 +19,7 @@ class Orange(Cat):
         self.cat_color = "Orange"
         self.cat_image = '<img src="http://upload.wikimedia.org/wikipedia/commons/1/1b/Mr._Maji,_a_long-haired_orange_cat_with_white_muzzle.jpg" width="300px" height="300px">'
     def show(self):
-        return self.cat_name + self.cat_type + self.cat_color + self.cat_image
+        return "<p>"+ self.cat_name+ "</p>"+ "<p>"+self.cat_type+"</p>" + "<p>"+self.cat_color+"</p>"+self.cat_image
 
 
 
@@ -32,7 +32,8 @@ class Black(Cat):
         self.cat_image = '<img src="http://blog.hepcatsmarketing.com/wp-content/uploads/2013/07/Cat-of-the-Day-Bombay-3.gif" width="300px" height="300px"/>'
 
     def show(self):
-        return self.cat_name + self.cat_type + self.cat_color + self.cat_image
+        return "<p>"+ self.cat_name+ "</p>"+ "<p>"+self.cat_type+"</p>" + "<p>"+self.cat_color+"</p>"+self.cat_image
+
 
 
 class Bengal(Cat):
@@ -41,10 +42,10 @@ class Bengal(Cat):
         self.cat_name = "Bengal Cat "
         self.cat_type = "Bengal "
         self.cat_color = "Mix "
-        self.cat_image = ''
+        self.cat_image = '<img src="http://www.royalcanin.com.au/var/royalcanin/storage/images/breeds/cat-breeds/bengal/18927210-13-eng-GB/bengal.jpg" width="300px" height="300px"/>'
 
     def show(self):
-        return self.cat_name + self.cat_type + self.cat_color + self.cat_image
+        return "<p>"+ self.cat_name+ "</p>"+ "<p>"+self.cat_type+"</p>" + "<p>"+self.cat_color+"</p>"+self.cat_image
 
 
 class Burmese(Cat):
@@ -53,11 +54,11 @@ class Burmese(Cat):
         self.cat_name = "Burmese "
         self.cat_type = "Burmese "
         self.cat_color = "White-ish Grey "
-        self.cat_image = ''
+        self.cat_image = '<img src="http://www.royalcanin.in/var/royalcanin/storage/images/breeds/cat-breeds/burmese/19254976-17-eng-GB/burmese.jpg" width="300px" height="300px"/>'
 
 
     def show(self):
-        return self.cat_name + self.cat_type + self.cat_color + self.cat_image
+        return "<p>"+ self.cat_name+ "</p>"+ "<p>"+self.cat_type+"</p>" + "<p>"+self.cat_color+"</p>"+self.cat_image
 
 
 

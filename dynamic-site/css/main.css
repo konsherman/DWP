@@ -1,0 +1,66 @@
+body{
+	background-image: url(http://i.imgur.com/ytgWbqW.png);
+	font-family: 'Sniglet', cursive;
+
+	
+}
+p{
+text-align: center;
+
+color: #61CDF5;
+}
+ul,a{
+	list-style: none;
+	text-decoration: none;
+}
+#wrapper{
+	width: 960px;
+	height: 700px;
+	margin: 0px auto;
+
+}
+img{
+	position: relative;
+	left: 40%;
+
+}
+
+li{
+	display: inline-block;
+	text-align: center;
+	padding-top: 15px;
+	width: 100px;
+	height: 30px;
+	background-color: #61CDF5;
+	font-family: 'Sniglet', cursive;
+	box-shadow: 0px 6px 5px -2px rgba(0,0,0,0.75);
+	position: relative;
+	left: 25%;
+	top:100px;
+
+}
+
+a:link {
+    color: #333;
+}
+a:visited {
+    color: #333;
+}
+a:hover {
+    color: #614;
+    text-decoration: underline;
+}
+a:active {
+    color: #333;
+}
+h1 {
+	color: #61CDF5
+}
+
+
+
+
+
+
+
+/*--Blue>#61CDF5;---#333  */
