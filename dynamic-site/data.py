@@ -3,7 +3,7 @@
 #dynamic-stie
 
 
-class Cat(object):
+class Cat(object): #super classss
     def __init__(self):
         self.cat_name = ""
         self.cat_type = ""
@@ -13,13 +13,13 @@ class Cat(object):
 
 class Orange(Cat):
     def __init__(self):
-        Cat.__init__(self)
+        Cat.__init__(self) #calling in the super class
         self.cat_name = "Orange Cat"
         self.cat_type = "American Short Hair"
         self.cat_color = "Orange"
         self.cat_image = '<img src="http://upload.wikimedia.org/wikipedia/commons/1/1b/Mr._Maji,_a_long-haired_orange_cat_with_white_muzzle.jpg" width="300px" height="300px">'
     def show(self):
-        return "<p>"+ self.cat_name+ "</p>"+ "<p>"+self.cat_type+"</p>" + "<p>"+self.cat_color+"</p>"+self.cat_image
+        return "<p>"+ self.cat_name+ "</p>"+ "<p>"+self.cat_type+"</p>" + "<p>"+self.cat_color+"</p>"+self.cat_image #function that adds everything up for spesific cat and returns it 
 
 
 
