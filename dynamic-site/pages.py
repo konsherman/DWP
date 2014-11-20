@@ -2,7 +2,7 @@
 #today
 #dynamic-stie
 
-class Page(object):
+class Page(object): #page class this is going to spit the whole page out
     def __init__(self):
         self.head = '''
 <html>
@@ -35,5 +35,5 @@ class Page(object):
 </html>
 '''
 
-    def print_out(self):
+    def print_out(self): #just printing everything out
         return self.head + self.body + self.content + self.close

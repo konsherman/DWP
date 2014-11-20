@@ -19,7 +19,7 @@ class Orange(Cat):
         self.cat_color = "Orange"
         self.cat_image = '<img src="http://upload.wikimedia.org/wikipedia/commons/1/1b/Mr._Maji,_a_long-haired_orange_cat_with_white_muzzle.jpg" width="300px" height="300px">'
     def show(self):
-        return "<p>"+ self.cat_name+ "</p>"+ "<p>"+self.cat_type+"</p>" + "<p>"+self.cat_color+"</p>"+self.cat_image #function that adds everything up for spesific cat and returns it 
+        return "<p>"+ self.cat_name+ "</p>"+ "<p>"+self.cat_type+"</p>" + "<p>"+self.cat_color+"</p>"+self.cat_image #function that adds everything up for spesific cat and returns it
 
 
 
