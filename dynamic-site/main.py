@@ -2,20 +2,21 @@
 #today
 #dynamic-stie
 import webapp2
-from data import Cat, Black, Orange , Bengal, Burmese
+from data import Cat, Black, Orange , Bengal, Burmese #bringing in the cat classes
 
-from pages import Page
+from pages import Page #impoting page class
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         c = Cat()
+#-------CALLING CLASSES-------
         b = Black()
         o = Orange()
         ben = Bengal()
         bur = Burmese()
         p = Page()
         if self.request.GET:
-            if self.request.GET['cat'] == 'black':
+            if self.request.GET['cat'] == 'black': #if the search bar == ?cat=black  cat run this
                 self.response.write(b.show()+p.print_out())
                 # self.response.write(b.show())
 
@@ -30,11 +31,7 @@ class MainHandler(webapp2.RequestHandler):
                 self.response.write(bur.show()+p.print_out())
 
         else:
-            self.response.write(p.print_out())
-
-
-
-
+            self.response.write(p.print_out()) #else just print it out
 
 
 
