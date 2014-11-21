@@ -33,13 +33,15 @@ class Orange(Cat):
 class Black(Cat):
     def __init__(self):
         Cat.__init__(self)
-        self.cat_name = "Black Cat "
-        self.cat_type = "Bombay "
-        self.cat_color = "Black "
-        self.cat_image = '<img src="http://blog.hepcatsmarketing.com/wp-content/uploads/2013/07/Cat-of-the-Day-Bombay-3.gif" width="300px" height="300px"/>'
+        self._cat_name = "Black Cat "
+        self._cat_type = "Bombay "
+        self._cat_color = "Black "
+        self._cat_image = '<img src="http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2014/7/30/1406736501397/Black-cats-are-being-over-014.jpg" width="300px" height="300px"/>'
 
-    def show(self):
-        return "<p>Cat Name: "+ self.cat_name+ "</p>"+ "<p>Cat Type: "+self.cat_type+"</p>" + "<p>Cat Colors: "+self.cat_color+"</p>"+self.cat_image
+    @property #treat it like avariable in other classes #write only
+    def stuff(self):#getter getters always return
+        all = "<p>Cat Name: "+ self._cat_name+ "</p>"+ "<p>Cat Type: "+self._cat_type+"</p>" + "<p>Cat Colors: "+self._cat_color+"</p>"+self._cat_image
+        return all
 
 
 
