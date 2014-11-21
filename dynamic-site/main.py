@@ -9,7 +9,7 @@ from pages import Page #impoting page class
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         c = Cat()
-#-------CALLING CLASSES-------
+#------CALLING CLASSES---
         b = Black()
         o = Orange()
         ben = Bengal()
@@ -18,11 +18,9 @@ class MainHandler(webapp2.RequestHandler):
         if self.request.GET:
             if self.request.GET['cat'] == 'black': #if the search bar == ?cat=black  cat run this
                 self.response.write(b.show()+p.print_out())
-                # self.response.write(b.show())
-
 
             if self.request.GET['cat'] == 'orange':
-                self.response.write(o.show()+p.print_out())
+                self.response.write(o.content+p.print_out())
 
             if self.request.GET['cat'] == 'bengal':
                 self.response.write(ben.show()+p.print_out())
