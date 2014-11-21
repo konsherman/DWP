@@ -16,8 +16,8 @@ class MainHandler(webapp2.RequestHandler):
         bur = Burmese()
         p = Page()
         if self.request.GET:
-            if self.request.GET['cat'] == 'black': #if the search bar == ?cat=black  cat run this
-                self.response.write(b.stuff+p.print_out())
+            if self.request.GET['cat'] == 'black': #if the search bar == ?cat=black run this vv
+                self.response.write(b.stuff+p.print_out())#printing the cat info + the main page that way the buttons still show up when you view the cat
 
             if self.request.GET['cat'] == 'orange':
                 self.response.write(o.content+p.print_out())

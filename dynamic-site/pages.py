@@ -1,10 +1,10 @@
 #Konner Sherman
 #today
 #dynamic-stie
-from data import Cat, Orange
+
 class Page(object): #page class this is going to spit the whole page out
     def __init__(self):
-        o= Orange
+
         self.head = '''
 <html>
 <head>
