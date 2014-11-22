@@ -9,11 +9,11 @@ class MainHandler(webapp2.RequestHandler):
         d = Data()
 
         if self.request.GET:
-            if self.request.GET['n']=='lan':
-                for i in d.houses:
-                    print i.name
+            if self.request.GET['n']:
+                self.response.write(p.print_out)
 
-        self.response.write(p.print_out)
+        else:
+            self.response.write(p.print_out)
 
 
 app = webapp2.WSGIApplication([

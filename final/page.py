@@ -9,23 +9,23 @@ class Page(object):
                 '''
 
         self.__content = '''
-        <a href="?n" name="Lan">Lannister</a>
-        <a href="?n" name="Stark">Stark</a>
-        <a href="?n" name="GreyJoey">GreyJoy</a>
-        <a href="?n" name="Targaryen">Targaryen</a>
-        <a href="?n" name="Tully">"Tully"</a>
+        <a href="?n" name=Lan>Lannister</a>
+        <a href="?n" name=Stark>Stark</a>
+        <a href="?n" name=GreyJoey>GreyJoy</a>
+        <a href="?n" name=Targaryen>Targaryen</a>
+        <a href="?n" name=Tully>Tully</a>
         '''
-        self.data = Data
-        self.data = self.data.houses
+        self.data = Data()
+        self.data2 = "Hello"
         self.__close = '''
 </body>
 </html>
                 '''
-    def print_2(self):
-        print self.data.houses
+
+
     @property
     def print_out(self):
-        return self.__head + self.__content + self.__close
+        return self.__head + self.__content + self.data.houses[1] + self.__close
 
 
 
