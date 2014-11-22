@@ -13,7 +13,7 @@ class MainHandler(webapp2.RequestHandler):
                 for i in d.houses:
                     print i.name
 
-        self.response.write(p.print_out())
+        self.response.write(p.print_out)
 
 
 app = webapp2.WSGIApplication([

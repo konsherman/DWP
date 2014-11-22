@@ -71,3 +71,7 @@ class Data(object):
     @property
     def houses(self):
         return self.__houses
+
+    @houses.setter
+    def houses(self,new):
+        self.__houses = new
