@@ -1,16 +1,16 @@
-from page import Page
-from data import Data
+from page import Page #importing page
+from data import Data #importing data
 import webapp2
 
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        p = Page()
+        p = Page() #calling the page
         d = Data()
 
         if self.request.GET:
             if self.request.GET['n']:
-                self.response.write(p.print_out)
+                self.response.write(p.print_out)#@asl;djf
 
         else:
             self.response.write(p.print_out)
