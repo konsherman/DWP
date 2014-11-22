@@ -9,8 +9,8 @@ class Page(object):
                 '''
 
         self.__content = '''
-        <a href="?n" name=Lan>Lannister</a>
-        <a href="?n" name=Stark>Stark</a>
+        <a href="?n" name="?lan" value ="lan">Lannister</a>
+        <a href="n" name=Stark>Stark</a>
         <a href="?n" name=GreyJoey>GreyJoy</a>
         <a href="?n" name=Targaryen>Targaryen</a>
         <a href="?n" name=Tully>Tully</a>
@@ -25,7 +25,7 @@ class Page(object):
 
     @property
     def print_out(self):
-        return self.__head + self.__content + self.data.houses[1] + self.__close
+        return self.__head + self.__content  + self.__close
 
 
 

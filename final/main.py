@@ -10,7 +10,8 @@ class MainHandler(webapp2.RequestHandler):
 
         if self.request.GET:
             if self.request.GET['n']:
-                self.response.write(p.print_out)#@asl;djf
+                for i in d.houses[1]:
+                    self.response.write(i)
 
         else:
             self.response.write(p.print_out)
