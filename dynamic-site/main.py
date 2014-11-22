@@ -2,7 +2,7 @@
 #today
 #dynamic-stie
 import webapp2
-from data import Cat, Black, Orange , Bengal, Burmese #bringing in the cat classes
+from data import Cat,Data
 
 from pages import Page #impoting page class
 
@@ -10,26 +10,30 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):
         c = Cat()
 #------CALLING CLASSES---
-        b = Black()
-        o = Orange()
-        ben = Bengal()
-        bur = Burmese()
+        d = Data()
+
         p = Page()
         if self.request.GET:
             if self.request.GET['cat'] == 'black': #if the search bar == ?cat=black run this vv
-                self.response.write(b.stuff+p.print_out())#printing the cat info + the main page that way the buttons still show up when you view the cat
+                p.cat = d.b
+
+                self.response.write(p.print_out())#printing the cat info + the main page that way the buttons still show up when you view the cat
 
             if self.request.GET['cat'] == 'orange':
-                self.response.write(o.content+p.print_out())
+                p.cat = d.o
+                self.response.write(p.print_out())
 
             if self.request.GET['cat'] == 'bengal':
-                self.response.write(ben.show()+p.print_out())
+                p.cat = d.ben
+                self.response.write(p.print_out())
 
             if self.request.GET['cat'] == 'burmese':
-                self.response.write(bur.show()+p.print_out())
+                p.cat = d.bur
+                self.response.write(p.print_out())
+
 
         else:
-            self.response.write(p.print_out()) #else just print it out
+            self.response.write(p.print_out2()) #else just print it out
 
 
 

@@ -1,7 +1,7 @@
 #Konner Sherman
 #today
 #dynamic-stie
-
+from data import Cat
 class Page(object): #page class this is going to spit the whole page out
     def __init__(self):
 
@@ -27,11 +27,18 @@ class Page(object): #page class this is going to spit the whole page out
         '''
         self.content = '''
 
+
         '''
+        self.cat = Cat()
         self.close = '''
 </body>
 </html>
 '''
 
     def print_out(self): #just printing everything out
+
+        return self.head + self.body +"<p>"+self.cat.cat_name+"</p>"+"<p>"+self.cat.cat_color+"</p>"+"<p>"+self.cat.cat_type+"</p>"+self.cat.cat_image+self.content + self.close
+
+    def print_out2(self): #just printing everything out
         return self.head + self.body + self.content + self.close
+
